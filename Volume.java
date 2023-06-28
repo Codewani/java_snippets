@@ -3,7 +3,7 @@ public class Volume {
         int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7};
         int temp = 0;
         for (int i = 0; i < height.length; i++){
-            for (int j = 0; j < height.length; j++){
+            for (int j = i + 1; j < height.length; j++){
                 if (i != j){
                     int width;
                     int _height;
