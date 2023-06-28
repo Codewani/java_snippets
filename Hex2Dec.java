@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+//A Java Hexadecimal to Decimal Converter that does not utilize ASCII conversions
 public class Hex2Dec{
 	public static void main(String[] args){
 		System.out.println("Enter a valid hexadecimal value");
