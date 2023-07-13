@@ -15,15 +15,21 @@ import java.util.*;
 public class RowSort{
 	public static void main(String[] args){
 		double[][] myArray = new double[3][3];
-		anArray(myArray);
+		createArray(myArray);
 		sortRows(myArray);
+		displayMatrix(myArray);
+	}
+
+	public static void displayMatrix(double[][] array){
+		System.out.println("The row-sorted array is");
 		for(int i = 0; i < 3; i++){
 			for(int j = 0; j < 3; j++){
-				System.out.print(myArray[i][j] + " ");
+				System.out.print(array[i][j] + " ");
 			}
 		System.out.print("\n");
 		}
 	}
+
 	public static double[][] sortRows(double[][] array){
 		for(int i = 0; i < 3; i++){
 			for(int j = 0; j < 2; j++){
@@ -39,8 +45,8 @@ public class RowSort{
 		return array;			
 	}
 
-	public static double[][] anArray(double[][] array){
-		System.out.println("Enter a 3 x 3 array");
+	public static double[][] createArray(double[][] array){
+		System.out.println("Enter a 3-by-3 matrix row by row:");
 		Scanner input = new Scanner(System.in);
 		for(int i = 0; i < 3; i++){
 			for(int j = 0; j < 3; j++){
