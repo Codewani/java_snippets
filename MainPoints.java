@@ -1,8 +1,12 @@
 public class MainPoints{
 	public static void main(String[] args){
 		Points p = new Points(3,4);
-		System.out.println(p.distance(0, 0));
+		Points o = new Points(0, 0);
+		//Calculates the distance between point p and point o
+		System.out.println(p.distance(o)); 
 		System.out.println(p.mytoString());
+		//Calculates the number of points creates
+		System.out.println(p.numberOfPoints);
 	}
 }
 class Points{
@@ -26,6 +30,7 @@ class Points{
 	double getY(){
 		return y;
 	}
+	//Displays the Cordinates of P
 	String mytoString(){
 		return "(" + x + ", " + y + ")";
 	}
