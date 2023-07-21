@@ -5,7 +5,7 @@ public class MainPoints{
 		//Calculates the distance between point p and point o
 		System.out.println(p.distance(o)); 
 		System.out.println(p.mytoString());
-		//Calculates the number of points creates
+		//Displays the number of points created
 		System.out.println(p.numberOfPoints);
 	}
 }
