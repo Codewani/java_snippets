@@ -6,7 +6,7 @@ public class MainPoints{
 		System.out.println(p.distance(o)); 
 		System.out.println(p.mytoString());
 		//Displays the number of points created
-		System.out.println(p.numberOfPoints);
+		System.out.println(Points.numberOfPoints);
 	}
 }
 class Points{
