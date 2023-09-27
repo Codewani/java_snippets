@@ -15,12 +15,12 @@ public class tax{
 			System.out.println("Tax: " + tax + " Net salary: " + net_salary);
 		}
 		else if(income <= 8900){
-			double tax = (6800 * 0.200) + (income - 6800) * 0.300;
+			double tax = (4000 * 0.000) + ((6800 - 4000) * 0.200) + (income - 6800) * 0.300;
 			double net_salary = income - tax;
 			System.out.println("Tax: " + tax + " Net salary: " + net_salary);
 		}
 		else{
-			double tax = (8900 * 0.300) + (income - 8900) * 0.375;
+			double tax = (4000 * 0.000) + ((6800 - 4000) * 0.200) + ((8900 - 6800) * 0.300) + (income - 8900) * 0.375;
 			double net_salary = income - tax;
 			System.out.println("Tax: " + tax + " Net salary: " + net_salary);
 		}
